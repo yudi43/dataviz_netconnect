@@ -6,7 +6,7 @@ import View2 from "./View2";
 import View3 from "./View3";
 import View4 from "./View4";
 import theme from "../themes/theme";
-
+// import { View1Data, View2Data, View3Data, View4Data } from "../data/data";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -28,13 +28,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
   },
   view2: {
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: theme.palette.primary.main,
   },
   view3: {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette.primary.main,
   },
   view4: {
-    backgroundColor: theme.palette.primary.contrastText,
+    backgroundColor: theme.palette.primary.main,
   },
   activeButton: {
     backgroundColor: theme.palette.primary.dark + " !important",
@@ -57,7 +57,6 @@ export default function LandingPage() {
   const handleViewClick = (view) => {
     setSelectedView(view);
   };
-
   return (
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar}>
